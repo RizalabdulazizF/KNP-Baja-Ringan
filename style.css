@@ -1,0 +1,638 @@
+/* ==================== RESET & BASE STYLES ==================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #2d3748;
+    background-color: #f7fafc;
+}
+
+/* ==================== CONTAINER & UTILITIES ==================== */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #1a365d;
+    font-weight: 700;
+}
+
+.btn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: #ecc94b;
+    color: #1a365d;
+    box-shadow: 0 4px 6px rgba(236, 201, 75, 0.3);
+}
+
+.btn-primary:hover {
+    background-color: #d4af37;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(236, 201, 75, 0.4);
+}
+
+/* ==================== NAVBAR ==================== */
+
+.navbar {
+    background-color: #1a365d;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #ecc94b;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    color: #f7fafc;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #ecc94b;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #ecc94b;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* ==================== HERO SECTION ==================== */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #1a365d 0%, #2c5aa0 100%);
+    color: white;
+    padding: 4rem 2rem;
+    min-height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    flex: 1;
+    z-index: 2;
+    max-width: 600px;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.hero-image {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* ==================== LAYANAN SECTION ==================== */
+
+.layanan {
+    padding: 5rem 2rem;
+    background-color: white;
+}
+
+.layanan-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.layanan-card {
+    background-color: #f7fafc;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: all 0.3s ease;
+    border-top: 4px solid #ecc94b;
+}
+
+.layanan-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.layanan-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.layanan-card h3 {
+    font-size: 1.3rem;
+    color: #1a365d;
+    margin-bottom: 1rem;
+}
+
+.layanan-card p {
+    color: #718096;
+    line-height: 1.6;
+}
+
+/* ==================== GALERI SECTION ==================== */
+
+.galeri {
+    padding: 5rem 2rem;
+    background-color: #f7fafc;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border: 2px solid #1a365d;
+    background-color: white;
+    color: #1a365d;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: #ecc94b;
+    border-color: #ecc94b;
+    color: #1a365d;
+}
+
+.galeri-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.galeri-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    aspect-ratio: 1;
+    background-color: #e2e8f0;
+}
+
+.galeri-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.galeri-item:hover img {
+    transform: scale(1.08);
+}
+
+.galeri-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, transparent 0%, rgba(26, 54, 93, 0.9) 100%);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.galeri-item:hover .galeri-overlay {
+    transform: translateY(0);
+}
+
+.galeri-overlay p {
+    font-weight: 600;
+}
+
+.galeri-item.hidden {
+    display: none;
+}
+
+/* ==================== KEUNGGULAN SECTION ==================== */
+
+.keunggulan {
+    padding: 5rem 2rem;
+    background-color: white;
+}
+
+.keunggulan-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.keunggulan-item {
+    background-color: #f7fafc;
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid #ecc94b;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.keunggulan-item h3 {
+    color: #1a365d;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.keunggulan-item p {
+    color: #718096;
+    line-height: 1.6;
+}
+
+/* ==================== KONTAK SECTION ==================== */
+
+.kontak {
+    padding: 5rem 2rem;
+    background-color: #f7fafc;
+}
+
+.kontak-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.kontak-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.info-item h3 {
+    color: #1a365d;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.info-item p {
+    color: #718096;
+}
+
+.info-item a {
+    color: #ecc94b;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.info-item a:hover {
+    color: #d4af37;
+}
+
+.kontak-form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #1a365d;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e0;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #ecc94b;
+    box-shadow: 0 0 0 3px rgba(236, 201, 75, 0.1);
+}
+
+.kontak-form button {
+    width: 100%;
+}
+
+/* ==================== FOOTER ==================== */
+
+.footer {
+    background-color: #1a365d;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.footer p {
+    margin: 0.5rem 0;
+}
+
+/* ==================== LIGHTBOX ==================== */
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    animation: fadeIn 0.3s ease;
+}
+
+.lightbox.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.lightbox-image {
+    max-width: 90%;
+    max-height: 80%;
+    object-fit: contain;
+    animation: zoomIn 0.3s ease;
+}
+
+.lightbox-caption {
+    color: white;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 30px;
+    right: 45px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #ecc94b;
+}
+
+/* ==================== ANIMATIONS ==================== */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: absolute;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: #1a365d;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        gap: 0;
+        padding: 2rem 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu a {
+        display: block;
+        padding: 1rem;
+        border-bottom: 1px solid rgba(236, 201, 75, 0.2);
+    }
+
+    /* Hero Section */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+        min-height: auto;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-image {
+        opacity: 0;
+    }
+
+    /* Section Titles */
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Layanan Grid */
+    .layanan-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    /* Galeri Grid */
+    .galeri-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .galeri-item {
+        aspect-ratio: 16 / 9;
+    }
+
+    /* Keunggulan Grid */
+    .keunggulan-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    /* Kontak Grid */
+    .kontak-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    /* Filter Buttons */
+    .filter-buttons {
+        gap: 0.5rem;
+    }
+
+    .filter-btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    /* Lightbox */
+    .lightbox-image {
+        max-width: 95%;
+        max-height: 75%;
+    }
+
+    .close {
+        top: 20px;
+        right: 20px;
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 1.3rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .layanan-card,
+    .keunggulan-item {
+        padding: 1.5rem;
+    }
+
+    .layanan-icon {
+        font-size: 2.5rem;
+    }
+
+    .info-item h3,
+    .layanan-card h3,
+    .keunggulan-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .filter-btn {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}

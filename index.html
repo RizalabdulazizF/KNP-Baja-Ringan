@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KNP Baja Ringan - Solusi Baja Ringan Profesional untuk Rumah dan Bisnis Anda">
+    <title>KNP Baja Ringan - Solusi Konstruksi Modern</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==================== NAVBAR BEGIN ==================== -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="logo">
+                    <h1>KNP Baja Ringan</h1>
+                </div>
+                
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#layanan">Layanan</a></li>
+                    <li><a href="#galeri">Portofolio</a></li>
+                    <li><a href="#keunggulan">Keunggulan</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ==================== NAVBAR END ==================== -->
+
+    <!-- ==================== HERO SECTION BEGIN ==================== -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Konstruksi Baja Ringan Berkualitas Tinggi</h2>
+            <p>Solusi baja ringan profesional untuk rumah, kantor, dan proyek komersial Anda</p>
+            <button class="btn btn-primary" onclick="scrollToSection('kontak')">Hubungi Kami</button>
+        </div>
+        <img src="assets/low-angle-view-scafolding-building.jpg" alt="Hero Background" class="hero-image">
+    </section>
+    <!-- ==================== HERO SECTION END ==================== -->
+
+    <!-- ==================== LAYANAN SECTION BEGIN ==================== -->
+    <section id="layanan" class="layanan">
+        <div class="container">
+            <h2 class="section-title">Layanan Kami</h2>
+            <div class="layanan-grid">
+                <div class="layanan-card">
+                    <div class="layanan-icon">🏠</div>
+                    <h3>Baja Ringan</h3>
+                    <p>Konstruksi baja ringan untuk rangka atap rumah dan bangunan dengan kualitas terjamin</p>
+                </div>
+                <div class="layanan-card">
+                    <div class="layanan-icon">🏗️</div>
+                    <h3>Kanopi</h3>
+                    <p>Pemasangan kanopi baja ringan yang kokoh, estetik, dan tahan lama untuk garasi atau ruang outdoor</p>
+                </div>
+                <div class="layanan-card">
+                    <div class="layanan-icon">🎨</div>
+                    <h3>Plafon</h3>
+                    <p>Plafon gypsum dan akustik dengan rangka baja ringan berkualitas premium dan instalasi profesional</p>
+                </div>
+                <div class="layanan-card">
+                    <div class="layanan-icon">⚙️</div>
+                    <h3>Konsultasi</h3>
+                    <p>Konsultasi desain dan perencanaan proyek konstruksi baja ringan sesuai kebutuhan Anda</p>
+                </div>
+                <div class="layanan-card">
+                    <div class="layanan-icon">🔧</div>
+                    <h3>Pemasangan</h3>
+                    <p>Layanan pemasangan profesional dengan tim berpengalaman dan peralatan modern</p>
+                </div>
+                <div class="layanan-card">
+                    <div class="layanan-icon">✅</div>
+                    <h3>Garansi</h3>
+                    <p>Garansi keahlian dan kualitas material untuk kepuasan dan ketenangan pikiran Anda</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==================== LAYANAN SECTION END ==================== -->
+
+    <!-- ==================== GALERI PORTOFOLIO BEGIN ==================== -->
+    <section id="galeri" class="galeri">
+        <div class="container">
+            <h2 class="section-title">Galeri Portofolio</h2>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="semua">Semua</button>
+                <button class="filter-btn" data-filter="baja-ringan">Baja Ringan</button>
+                <button class="filter-btn" data-filter="kanopi">Kanopi</button>
+                <button class="filter-btn" data-filter="plafon">Plafon</button>
+            </div>
+
+            <div class="galeri-grid">
+                <div class="galeri-item" data-category="baja-ringan">
+                    <img src="assets/658159637_1543834317749883_5560059597898063905_n.jpg" alt="Proyek Baja Ringan 1">
+                    <div class="galeri-overlay">
+                        <p>Proyek Baja Ringan Modern</p>
+                    </div>
+                </div>
+
+                <div class="galeri-item" data-category="kanopi">
+                    <img src="assets/696898966_1544352244364757_6933971857065007814_n.jpg" alt="Proyek Kanopi 1">
+                    <div class="galeri-overlay">
+                        <p>Kanopi Berkualitas Premium</p>
+                    </div>
+                </div>
+
+                <div class="galeri-item" data-category="plafon">
+                    <img src="assets/697028287_1545634080903240_6042096906661808660_n.jpg" alt="Proyek Plafon 1">
+                    <div class="galeri-overlay">
+                        <p>Plafon Gypsum Profesional</p>
+                    </div>
+                </div>
+
+                <div class="galeri-item" data-category="baja-ringan">
+                    <img src="assets/697896217_1544599241006724_7859104279645102114_n.jpg" alt="Proyek Baja Ringan 2">
+                    <div class="galeri-overlay">
+                        <p>Rangka Baja Ringan Kokoh</p>
+                    </div>
+                </div>
+
+                <div class="galeri-item" data-category="kanopi">
+                    <img src="assets/697896228_1544768777656437_2044660046300467891_n.jpg" alt="Proyek Kanopi 2">
+                    <div class="galeri-overlay">
+                        <p>Kanopi Rumah Tinggal</p>
+                    </div>
+                </div>
+
+                <div class="galeri-item" data-category="plafon">
+                    <img src="assets/698381831_1545782540888394_8332617621364972257_n.jpg" alt="Proyek Plafon 2">
+                    <div class="galeri-overlay">
+                        <p>Plafon Akustik Modern</p>
+                    </div>
+                </div>
+
+                <div class="galeri-item" data-category="baja-ringan">
+                    <img src="assets/698389279_1546788830787765_171991043580119941_n.jpg" alt="Proyek Baja Ringan 3">
+                    <div class="galeri-overlay">
+                        <p>Konstruksi Baja Ringan</p>
+                    </div>
+                </div>
+
+                <div class="galeri-item" data-category="kanopi">
+                    <img src="assets/698968331_1546374300829218_9105570167151495123_n.jpg" alt="Proyek Kanopi 3">
+                    <div class="galeri-overlay">
+                        <p>Kanopi Ruang Tamu</p>
+                    </div>
+                </div>
+
+                <div class="galeri-item" data-category="plafon">
+                    <img src="assets/698968337_1546214320845216_9114026352396037614_n.jpg" alt="Proyek Plafon 3">
+                    <div class="galeri-overlay">
+                        <p>Plafon Ruang Keluarga</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==================== GALERI PORTOFOLIO END ==================== -->
+
+    <!-- ==================== KEUNGGULAN SECTION BEGIN ==================== -->
+    <section id="keunggulan" class="keunggulan">
+        <div class="container">
+            <h2 class="section-title">Keunggulan KNP Baja Ringan</h2>
+            <div class="keunggulan-grid">
+                <div class="keunggulan-item">
+                    <h3>Material Berkualitas</h3>
+                    <p>Menggunakan baja ringan premium dengan standar internasional untuk daya tahan maksimal</p>
+                </div>
+                <div class="keunggulan-item">
+                    <h3>Tim Profesional</h3>
+                    <p>Tim berpengalaman lebih dari 10 tahun di bidang konstruksi baja ringan dan instalasi</p>
+                </div>
+                <div class="keunggulan-item">
+                    <h3>Harga Kompetitif</h3>
+                    <p>Menawarkan harga terbaik dengan kualitas terjamin tanpa mengorbankan hasil akhir</p>
+                </div>
+                <div class="keunggulan-item">
+                    <h3>Garansi Pekerjaan</h3>
+                    <p>Garansi kepuasan 100% dengan layanan purna jual yang responsif dan dapat diandalkan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==================== KEUNGGULAN SECTION END ==================== -->
+
+    <!-- ==================== KONTAK SECTION BEGIN ==================== -->
+    <section id="kontak" class="kontak">
+        <div class="container">
+            <h2 class="section-title">Hubungi Kami</h2>
+            <div class="kontak-content">
+                <div class="kontak-info">
+                    <div class="info-item">
+                        <h3>📍 Lokasi</h3>
+                        <p>Jawa Barat, Indonesia</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>📱 WhatsApp</h3>
+                        <p><a href="https://wa.me/6281903705961" target="_blank">+62 819 0370 5961</a></p>
+                    </div>
+                    <div class="info-item">
+                        <h3>⏰ Jam Operasional</h3>
+                        <p>Senin - Jumat: 08:00 - 17:00<br>Sabtu: 08:00 - 15:00</p>
+                    </div>
+                </div>
+
+                <form class="kontak-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap</label>
+                        <input type="text" id="nama" name="nama" required placeholder="Masukkan nama Anda">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="luasarea">Luas Area (m²)</label>
+                        <input type="number" id="luasarea" name="luasarea" required placeholder="Contoh: 50">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="jasa">Pilihan Jasa</label>
+                        <select id="jasa" name="jasa" required>
+                            <option value="">-- Pilih Jasa --</option>
+                            <option value="Baja Ringan">Baja Ringan</option>
+                            <option value="Kanopi">Kanopi</option>
+                            <option value="Plafon">Plafon</option>
+                            <option value="Konsultasi">Konsultasi</option>
+                            <option value="Lainnya">Lainnya</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pesan">Pesan (Opsional)</label>
+                        <textarea id="pesan" name="pesan" rows="4" placeholder="Tuliskan pesan atau pertanyaan Anda"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Kirim Melalui WhatsApp</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- ==================== KONTAK SECTION END ==================== -->
+
+    <!-- ==================== FOOTER BEGIN ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 KNP Baja Ringan. Semua hak dilindungi.</p>
+            <p>Solusi Konstruksi Modern untuk Rumah dan Bisnis Anda</p>
+        </div>
+    </footer>
+    <!-- ==================== FOOTER END ==================== -->
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-image" src="" alt="">
+        <div class="lightbox-caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
